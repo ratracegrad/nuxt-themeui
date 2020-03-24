@@ -1,7 +1,7 @@
 {
   "name": "nuxt-themeui",
   "version": "1.0.0",
-  "description": "My smashing Nuxt.js project",
+  "description": "Nuxt version of the Theme UI",
   "author": "Jennifer Bland",
   "private": true,
   "scripts": {
@@ -11,15 +11,13 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "deploy:gh-pages": "gh-pages -d dist"
+    "deploy": "npm run generate && gh-pages -d dist"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
     "gh-pages": "^2.2.0",
-    "nuxt": "^2.0.0",
-    "push-dir": "^0.4.1"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
