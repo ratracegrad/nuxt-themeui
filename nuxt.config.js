@@ -44,6 +44,12 @@ export default {
     '@nuxtjs/pwa'
   ],
   /*
+   ** Deploy to Github Pages
+   */
+  router: {
+    base: '/nuxt-themeui/'
+  },
+  /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
